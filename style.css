@@ -1,0 +1,81 @@
+body {
+  font-family:lato;
+  min-height:2450px;
+}
+
+.img-fit-modal{
+  display:block;
+  position:relative;
+  width:50%;
+  float:right;
+  
+}
+
+.sign-up-cta{
+ /* TODO: implement */
+  
+  
+}
+
+.form-wrapper{
+ /* TODO: implement */
+  
+}
+
+/* The Close Button */
+.close{
+    color: #aaaaaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: relative;
+    float:right; 
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.slider-modal--hidden{
+  visibility:hidden;
+}
+
+.slider-modal--visible {
+    -webkit-animation-name: sliderAnimation; 
+    -webkit-animation-duration: 4s; 
+    animation-name: sliderAnimation;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    text-align:left;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 5px;
+    width: 100%;
+    max-width:400px;
+    height:auto;
+    position: fixed;
+    display: block;
+    margin-bottom:20px;
+}
+
+
+@-webkit-keyframes sliderAnimation {
+    0%   {right:-200px; bottom:0px;}
+    25%  {right:0px; bottom:0px;}
+    50%  {right:0px; bottom:0px;}
+    100% {right:0px; bottom:0px;}
+
+
+}
+
+
+@keyframes sliderAnimation {
+    0%   {right:-200px; bottom:0px;}
+    25%  {right:0px; bottom:0px;}
+    50%  {right:0px; bottom:0px;}
+    100% {right:0px; bottom:0px;}
+}
